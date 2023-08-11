@@ -1,0 +1,45 @@
+[
+  {
+    "kernelSource": {
+      "name": "Xiaomi_Kernel_OpenSource-sdm845",
+      "repo": "https://github.com/Akitlove/Xiaomi_Kernel_OpenSource-sdm845",
+      "branch": "88-zstd",
+      "device": "perseus",
+      "defconfig": "perseus_user_defconfig"
+    },
+    "withKernelSU": true,
+    "toolchains": [
+      {
+        "repo": "https://github.com/Akitlove/android-kernel-tools",
+        "branch": "clang13",
+        "name": "clang13",
+        "binPath": ["./bin"]
+      }
+    ],
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang13/clang/host/linux-x86/clang-r428724/bin/clang",
+      "externalCommand": {
+        "CROSS_COMPILE": "clang13/linaro-gcc-4.9/aarch64-linux-gnu/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "clang13/linaro-gcc-4.9/arm-linux-gnueabi/bin/arm-linux-gnueabi-",
+        "AR": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-ar",
+        "NM": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-nm",
+        "OBJCOPY": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-objcopy",
+        "OBJDUMP": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-objdump",
+        "READELF": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-readelf",
+        "OBJSIZE": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-size",
+        "STRIP": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-strip",
+        "HOSTCC": "clang13/clang/host/linux-x86/clang-r428724/bin/clang",
+        "HOSTCXX": "clang13/clang/host/linux-x86/clang-r428724/bin/clang++",
+        "LLVM_AR": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-ar",
+        "LLVM_DIS": "clang13/clang/host/linux-x86/clang-r428724/bin/llvm-dis"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/Akitlove/AnyKernel3",
+      "branch": "master"
+    }
+  }
+]
