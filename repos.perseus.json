@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi_Kernel_OpenSource-sdm845",
-      "repo": "https://github.com/Akitlove/Xiaomi_Kernel_OpenSource-sdm845",
-      "branch": "88-zstd",
-      "device": "perseus",
-      "defconfig": "perseus_user_defconfig"
+      "name": "android_kernel_samsung_exynos990/tree/main",
+      "repo": "https://github.com/ExtremeXT/android_kernel_samsung_exynos990/tree/main",
+      "branch": "main",
+      "device": "r8s",
+      "defconfig": "extreme_r8s_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
@@ -38,7 +38,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/Akitlove/AnyKernel3",
+      "repo": "https://github.com/khusnan21/AnyKernel3",
       "branch": "master"
     }
   }
